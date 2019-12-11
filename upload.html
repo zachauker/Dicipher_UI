@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css.map">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee&display=swap">
+    <title>Upload Your Photo</title>
+</head>
+
+<body>
+    <div class="container is-fluid">
+        <div class="columns is-centered">
+            <div class="column">
+                <h1 id="title" class="has-text-centered is-size-1">DICIPHER</h1>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-centered">
+                <p class="has-text-centered">Please upload a file to enter processing. You will be asked about certain
+                    atributes of the photo to improve the quality of the systems analysis. </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6">
+                <span class="icon">
+                    <i class="fas fa-upload" id="upload_icon"></i>
+                </span>
+            </div>
+            <div class="column is-4">
+                <span class="icon">
+                    <i class="fas fa-ellipsis-h" id="pending_icon"></i>
+                </span>
+            </div>
+            <div class="column is-4">
+                <span class="icon">
+                    <i class="fas fa-check-square" id="completed_icon"></i>
+                </span>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-3" id="upload_caption">
+                <strong><label for="upload_icon">Browse for File:</label></strong>
+            </div>
+            <div class="column is-3" id=pending_caption>
+                <strong><label for="pending_icon">View Pending Files:</label></strong>
+            </div>
+            <div class="column is-3" id="completed_caption">
+                <strong><label for="completed_icon">View Completed Files:</label></strong>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column" id="home_button">
+                <div class="column is-4" id="exit_button">
+                    <div id="exit_button" class="control has-text-centered">
+                        <a class="button is-link" href="/welcome.html">Home</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="logout_button">
+                <div class="column is-4" id="sign_in">
+                    <div id="sign_in" class="control has-text-centered">
+                        <a class="button is-link" href="/sign_in.html">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    #title {
+        font-family: 'Bungee', cursive;
+        margin-top: 10rem;
+    }
+
+    #upload_icon {
+        margin-top: 12rem;
+        margin-left: 28rem;
+        margin-bottom: 4rem;
+        height: 120px;
+        width: 120px;
+    }
+
+    #upload_caption {
+        margin-left: 11rem;
+    }
+
+    #pending_icon {
+        margin-top: 12rem;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+        height: 120px;
+        width: 120px;
+    }
+
+    #pending_caption {
+        margin-left: 2rem;
+    }
+
+    #completed_icon {
+        margin-top: 10rem;
+        margin-right: 8rem;
+        height: 120px;
+        width: 120px;
+
+    }
+
+    #completed_caption {
+        margin-left: 4rem;
+    }
+
+    #home_button {
+        margin-top: 3rem;
+        margin-left: 20rem;
+    }
+
+    #logout_button {
+        margin-top: 3rem;
+    }
+</style>
