@@ -30,7 +30,7 @@
                 <div id="file_selector" class="file has-name">
                     <span class="file-icon">
                         <i class="fas fa-upload" id="upload_icon"></i>
-                        <input type="file" id="input" class="file-input" name="submission" onchange="handleFiles(this.files)">
+                        <input type="file" id="input" class="file-input" name="submission">
                     </span>
                 </div>
             </div>
@@ -77,10 +77,7 @@
         </div>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script>
-            function handleFiles() {
-                const selectedFile = document.getElementById('input').files[0];
-                document.getElementsByName('outPutImage')[0].value= selectedFile;
-            }
+
         </script>
 
 </body>
